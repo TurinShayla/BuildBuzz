@@ -92,9 +92,9 @@
             android:src="@drawable/construction">
 
         </ImageView>
-        <include        layout="@layout/toolbar">    </include>
+
 
     </LinearLayout>
-
+    <include        layout="@layout/toolbar">    </include>
 
     </LinearLayout>
