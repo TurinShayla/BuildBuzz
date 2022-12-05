@@ -1,2 +1,2 @@
 # BuildBuzz
-Staying inform about the nearest construction site
+Staying informed about the nearest construction site

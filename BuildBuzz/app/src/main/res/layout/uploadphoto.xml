@@ -5,6 +5,7 @@
     android:layout_gravity="center"
     android:layout_height="wrap_content"
     android:background="@drawable/layoutborder"
+    android:layout_marginTop="20dp"
     >
     <LinearLayout
         android:id="@+id/btn_upload_take"
