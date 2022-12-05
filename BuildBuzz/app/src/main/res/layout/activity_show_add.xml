@@ -7,13 +7,13 @@
     android:orientation="vertical"
     tools:context=".ShowAddActivity">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="230dp"
-            android:layout_gravity="center"
-            android:src="@drawable/googlemap">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:src="@drawable/googlemap">
 
-        </ImageView>
+    </ImageView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,35 +40,86 @@
                 android:textSize="25sp"
                 android:padding="10dp"
                 android:text="Construction Site: "></TextView>
-            <TextView
-                android:id="@+id/id_location"
-                android:layout_width="200dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:padding="10dp"
-                android:text="Construction type: "
-                android:textSize="20sp"></TextView>
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/btn_location2"
+                    android:layout_marginBottom="20dp">
+                </ImageButton>
+                <TextView
+                    android:id="@+id/id_location"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="Location: "
+                    android:textSize="20sp"></TextView>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/id_road"
-                android:padding="10dp"
-                android:layout_width="200dp"
+            <LinearLayout
+
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="Road Closed?: "
-                android:textSize="20sp"></TextView>
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/btn_danger"
+                    android:layout_marginBottom="20dp">
+                </ImageButton>
+                <TextView
+                    android:id="@+id/id_road"
+                    android:padding="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Road Closed?: "
+                    android:textSize="20sp"></TextView>
 
+            </LinearLayout>
 
+            <LinearLayout
 
-            <TextView
-                android:id="@+id/id_type"
-                android:padding="10dp"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="Construction type: "
-                android:textSize="20sp"></TextView>
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/btn_building"
+                    android:layout_marginBottom="20dp">
+                </ImageButton>
+                <TextView
+                    android:id="@+id/id_type"
+                    android:padding="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Construction type: "
+                    android:textSize="20sp"></TextView>
+
+
+            </LinearLayout>
+
+
+
+
+
+
 
         </LinearLayout>
 
@@ -96,5 +147,4 @@
 
     </LinearLayout>
     <include        layout="@layout/toolbar">    </include>
-
     </LinearLayout>
