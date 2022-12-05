@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BuildBuzz</string>
+    <string name="Input_add"> Name of the site</string>
+    <string name="Input_location"> Location</string>
+    <string name="Input_Photo"> Upload or Take New Photo</string>
+    <string name="Input_time"> Tentative date</string>
+    <string name="Search"> Search</string>
+</resources>

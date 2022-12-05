@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "24416878757",
+    "project_id": "buildbuzz-d0d68",
+    "storage_bucket": "buildbuzz-d0d68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24416878757:android:c1edbb394191d6190f0d4c",
+        "android_client_info": {
+          "package_name": "com.example.buildbuzz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24416878757-ecp8k4rk4ic82lgmrkrnlrivhfc821he.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU-BQ32ejDs-27dsk-iUeKT_HGNEfsvAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24416878757-ecp8k4rk4ic82lgmrkrnlrivhfc821he.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layoutborder"
+    >
+    <LinearLayout
+        android:id="@+id/btn_upload_take"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Upload"
+                >
+            </TextView>
+            <ImageButton
+                android:id="@+id/btn_upload"
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_btn_upload"
+                android:background="@color/white"
+                android:text=""
+                >
+            </ImageButton>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginStart="100dp"
+            android:gravity="center"
+            android:text="or">
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Take New Photo"
+                >
+            </TextView>
+            <ImageButton
+                android:layout_marginStart="40dp"
+                android:id="@+id/btn_camera"
+                android:layout_marginEnd="40dp"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_btn_camera"
+                android:text="Cancel"
+                >
+            </ImageButton>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_uploadImg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+        </ImageView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+    <LinearLayout
+        android:layout_marginTop="700dp"
+        android:id="@+id/toolbarHolder"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_weight="1.5"
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/ic_btn_home"
+            android:layout_gravity="bottom">
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/btn_map"
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/ic_btn_map"
+            android:padding="20dp"
+            android:layout_gravity="bottom">
+
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/btn_save"
+            android:layout_weight="1.5"
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/ic_btn_save"
+            android:layout_gravity="bottom">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn_setting"
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/ic_btn_setting"
+            android:padding="20dp"
+            android:layout_gravity="bottom">
+
+        </ImageButton>
+
+    </LinearLayout>
+
+</LinearLayout>
