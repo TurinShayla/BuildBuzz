@@ -35,7 +35,8 @@ private DatePickerDialog datePickerDialog;
 private AppCompatButton btn_submitAdd, btn_cancelAdd;
 public String road;
 Uri imageUri;
-
+    //^^^^^Alex call button ^^^^^^^^^^^^^
+public ImageButton btn_add,btn_home,btn_save,btn_map,btn_setting;
 //FirebaseDatabase rootNode;
 DatabaseReference databaseReference;
 
@@ -43,6 +44,10 @@ DatabaseReference databaseReference;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
+       //^^^^^Fatima call button ^^^^^^^^^^^^^
+        callButton();
+
+
         //**************** Database***********************
         databaseReference=FirebaseDatabase.getInstance().getReference("site");
 
@@ -58,8 +63,12 @@ DatabaseReference databaseReference;
         Method_dropDown();
 
     //******************************* Upload Photo ***************************************************
+
+     //   callButton();
     btn_upload=findViewById(R.id.btn_upload);
     btn_camera=findViewById(R.id.btn_camera);
+
+;
     //**************** Submit and Cancel **************************************************
         btn_submitAdd=findViewById(R.id.btn_submitAdd);
         btn_cancelAdd=findViewById(R.id.btn_cancelAdd);
@@ -69,8 +78,25 @@ DatabaseReference databaseReference;
         btn_camera.setOnClickListener(this);
         btn_submitAdd.setOnClickListener(this);
         btn_cancelAdd.setOnClickListener(this);
+
+
     }
 
+    //^^^^^Nabiha call button ^^^^^^^^^^^^^
+    private void callButton() {
+        // Assign Button Value
+      //  btn_add=findViewById(R.id.btn_add);
+        btn_home=findViewById(R.id.btn_home);
+        btn_map=findViewById(R.id.btn_map);
+        btn_save=findViewById(R.id.btn_save);
+        btn_setting=findViewById(R.id.btn_setting);
+// Set onclick listener
+     //   btn_add.setOnClickListener(this);
+        btn_home.setOnClickListener(this);
+        btn_save.setOnClickListener(this);
+        btn_map.setOnClickListener(this);
+        btn_setting.setOnClickListener(this);
+    }
     //******************************* DROP DOWN ***************************************************
 public void Method_dropDown(){
     road_closed_Spinner=findViewById(R.id.road_closed_Spinner);
@@ -115,6 +141,22 @@ public void Method_dropDown(){
                 Intent intent2=new Intent(AddActivity.this,MainActivity.class);
                 startActivity(intent2);
                 break;
+// ^^^^^^^^^^^^^ Nabiha Work ^^^^^^^^^^^^^
+            case R.id.btn_home:
+                Intent intent3=new Intent(AddActivity.this,MainActivity.class);
+                startActivity(intent3);
+            case R.id.btn_map:
+                Toast.makeText(this,"Under Construction",Toast.LENGTH_SHORT).show();
+
+                break;
+
+            case R.id.btn_save:
+                Toast.makeText(this,"Under Construction",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_setting:
+                Toast.makeText(this,"Under Construction",Toast.LENGTH_SHORT).show();
+                break;
+
         }
     }
 

@@ -19,17 +19,17 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// ^^^ CHANGE HERE ALEX ^^^
 public class ShowAddActivity extends AppCompatActivity implements View.OnClickListener {
     DatabaseReference databaseReference;
     private String siteId;
     private List<Site> siteList;
     private CustomAdapter customAdapter;
     //TextView id_name_one, id_roadCloased_one;
-    TextView id_construction,id_road,id_type,id_location;
-    public static  String userkey = "userkey";
-     int val=0;
-
+    TextView id_construction, id_road, id_type, id_location;
+    public static String userkey = "userkey";
+    int val = 0;
+    //^^^^^Alex call button ^^^^^^^^^^^^^
     public ImageButton btn_add, btn_home, btn_save, btn_map, btn_setting;
 
     @Override
@@ -90,7 +90,7 @@ public class ShowAddActivity extends AppCompatActivity implements View.OnClickLi
     }
 
 
-    //^^^^^Alex call button ^^^^^^^^^^^^^
+    //^^^^^Fatima call button ^^^^^^^^^^^^^
     private void callButton() {
         // Assign Button Value
         //  btn_add=findViewById(R.id.btn_add);
