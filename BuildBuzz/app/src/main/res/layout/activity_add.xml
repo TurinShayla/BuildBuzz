@@ -19,42 +19,79 @@
         android:textStyle="bold"
         android:text="Add New Construction Site">
     </TextView>
-    <EditText
-        android:id="@+id/Input_name"
-        android:layout_width="450dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:textSize="20sp"
-        android:hint="@string/Input_add"
-        android:inputType="text"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_btn_construction"
+            android:layout_marginBottom="20dp">
+        </ImageButton>
 
-        >
-    </EditText>
+        <EditText
+            android:id="@+id/Input_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"
+            android:hint="@string/Input_add"
+            android:inputType="text"
+            >
+        </EditText>
+    </LinearLayout>
 
-    <EditText
-        android:id="@+id/Input_location"
-        android:layout_width="450dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:textSize="20sp"
-        android:hint="@string/Input_location"
-        android:inputType="text"
-        android:layout_marginBottom="20dp"
-        >
-    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/btn_location2"
+            android:layout_marginBottom="20dp">
+        </ImageButton>
+        <EditText
+            android:id="@+id/Input_location"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"
+            android:hint="@string/Input_location"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            >
+        </EditText>
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/layout_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/btn_hourglass"
+            android:layout_marginBottom="20dp">
+        </ImageButton>
         <TextView
             android:id="@+id/textDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tentative Date: "
+            android:layout_marginTop="5dp"
             android:layout_marginBottom="20dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="5dp"
             android:textSize="20sp"
             >
         </TextView>
@@ -62,98 +99,123 @@
             android:id="@+id/btn_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="155dp"
+            android:layout_marginStart="100dp"
             android:layout_marginEnd="20dp"
             android:src="@drawable/ic_btn_calendar"
             android:layout_marginBottom="20dp">
         </ImageButton>
     </LinearLayout>
-
-
-    <Spinner
-        android:id="@+id/road_closed_Spinner"
-        android:layout_width="332dp"
-        android:layout_height="44dp"
-
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"></Spinner>
-
-    <ImageView
-        android:id="@+id/closed_dropdown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    </ImageView>
-    <View
-        android:layout_width="332dp"
-        android:layout_height="0.8dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:background="@color/black"
-        android:layout_marginBottom="20dp"
-        ></View>
-
-    <Spinner
-        android:id="@+id/type_spinner"
-        android:layout_width="332dp"
-        android:layout_height="44dp"
-
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"></Spinner>
-
-    <ImageView
-        android:id="@+id/type_dropdown_image"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/btn_danger"
+            android:layout_marginBottom="20dp">
+        </ImageButton>
+        <Spinner
+            android:id="@+id/road_closed_Spinner"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"></Spinner>
+
+        <ImageView
+            android:id="@+id/closed_dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <View
+            android:layout_width="200dp"
+            android:layout_height="0.8dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/black"
+            android:layout_marginBottom="20dp"
+            ></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/btn_building"
+            android:layout_marginBottom="20dp">
+        </ImageButton>
+        <Spinner
+            android:id="@+id/type_spinner"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"></Spinner>
+
+        <ImageView
+            android:id="@+id/type_dropdown_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </ImageView>
+        <View
+            android:layout_width="332dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/black"
+            android:layout_marginBottom="40dp"
+            ></View>
+    </LinearLayout>
+
+    <include
+        layout="@layout/uploadphoto">
+    </include>
+    <LinearLayout
+        android:id="@+id/btn_submit_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
         >
-    </ImageView>
-    <View
-        android:layout_width="332dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:background="@color/black"
-        android:layout_marginBottom="40dp"
-        ></View>
-<include
-    layout="@layout/uploadphoto">
-</include>
-<LinearLayout
-    android:id="@+id/btn_submit_cancel"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_marginTop="40dp"
-    >
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_submitAdd"
-        android:layout_marginStart="50dp"
-        android:background="@color/submit_btn_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:radius="20dp"
-        android:text="Submit"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submitAdd"
+            android:layout_marginStart="50dp"
+            android:background="@color/submit_btn_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:radius="20dp"
+            android:text="Submit"
 
-        >
-    </androidx.appcompat.widget.AppCompatButton>
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_marginStart="90dp"
-        android:id="@+id/btn_cancelAdd"
-        android:layout_marginEnd="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/submit_btn_color"
-        android:text="Cancel"
-             >
-    </androidx.appcompat.widget.AppCompatButton>
+            >
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="90dp"
+            android:id="@+id/btn_cancelAdd"
+            android:layout_marginEnd="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/submit_btn_color"
+            android:text="Cancel"
+            >
+        </androidx.appcompat.widget.AppCompatButton>
 
-</LinearLayout>
+    </LinearLayout>
     <include layout="@layout/toolbar"> </include>
 
     </LinearLayout>
