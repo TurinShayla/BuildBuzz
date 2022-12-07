@@ -35,7 +35,7 @@ private DatePickerDialog datePickerDialog;
 private AppCompatButton btn_submitAdd, btn_cancelAdd;
 public String road;
 Uri imageUri;
-
+    ImageButton btn_add,btn_home,btn_save,btn_map,btn_setting;
 //FirebaseDatabase rootNode;
 DatabaseReference databaseReference;
 
@@ -43,6 +43,8 @@ DatabaseReference databaseReference;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
+        callButton();
+
         //**************** Database***********************
         databaseReference=FirebaseDatabase.getInstance().getReference("site");
 
@@ -85,6 +87,20 @@ public void Method_dropDown(){
     ArrayAdapter<String>adapter=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item,Construction_type);
     type_spinner.setAdapter(adapter);
 }
+    private void callButton() {
+        // Assign Button Value
+
+        btn_home=findViewById(R.id.btn_home);
+        btn_map=findViewById(R.id.btn_map);
+        btn_save=findViewById(R.id.btn_save);
+        btn_setting=findViewById(R.id.btn_setting);
+// Set onclick listener
+
+        btn_home.setOnClickListener(this);
+        btn_save.setOnClickListener(this);
+        btn_map.setOnClickListener(this);
+        btn_setting.setOnClickListener(this);
+    }
 
     //******************************* DatePicker ***************************************************
     @Override
@@ -114,6 +130,21 @@ public void Method_dropDown(){
                 Toast.makeText(this, "Home Page", Toast.LENGTH_SHORT).show();
                 Intent intent2=new Intent(AddActivity.this,MainActivity.class);
                 startActivity(intent2);
+                break;
+
+            case R.id.btn_home:
+                Intent intent3=new Intent(AddActivity.this,MainActivity.class);
+                startActivity(intent3);
+            case R.id.btn_map:
+                Toast.makeText(this,"Under Construction",Toast.LENGTH_SHORT).show();
+
+                break;
+
+            case R.id.btn_save:
+                Toast.makeText(this,"Under Construction",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_setting:
+                Toast.makeText(this,"Under Construction",Toast.LENGTH_SHORT).show();
                 break;
         }
     }
