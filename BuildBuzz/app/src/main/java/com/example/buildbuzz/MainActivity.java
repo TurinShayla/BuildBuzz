@@ -30,7 +30,6 @@ ImageButton btn_add,btn_home,btn_save,btn_map,btn_setting;
     private CustomAdapter customAdapter;
     TextView id_name_one, id_roadCloased_one;
     int val=0;
-
     public static  String userkey = "user key";
     LinearLayout id_layout_sample;
     DatabaseReference databaseReference;
